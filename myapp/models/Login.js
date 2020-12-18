@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-var c = new Schema({
+var d = new Schema({
     name: { type: String, default: "" },
     email: { type: String, default: "" },
     age: { type: Number, default: "" },
@@ -9,4 +9,6 @@ var c = new Schema({
     createdDate: { type: Date, default: Date.now },
     modifiedDate: { type: Date, default: "" }
 });
-module.exports = mongoose.model('User', c);
+
+
+module.exports = mongoose.model('Login', d);
